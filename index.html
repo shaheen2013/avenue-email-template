@@ -10,7 +10,6 @@
 <style>
     /* Reset some default styles */
     body, table, td, a {
-        font-family: cursive;
         line-height: 100%;
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
@@ -19,9 +18,13 @@
     a {
         text-decoration: none;
     }
+    @media (max-width: 600px) {
+
+    }
 </style>
-<body style="margin: 0; padding: 0; background-color: #e8e8e8; font-family: Arial, Helvetica, sans-serif;">
+<body style="margin: 0; padding: 0; background-color: #e8e8e8; font-family: cursive, Arial, Helvetica, sans-serif;">
 <!-- Main Container -->
+
 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #e8e8e8;">
     <tr>
         <td style="padding: 0;">
@@ -294,9 +297,9 @@
                                 </td>
 
                                 <!-- Right Column - Quick Links + Need Help -->
-                                <td style="margin-left: 16px;display: inline-block;width: 100%;">
+                                <td style="display: inline-block;width: 100%;">
                                     <!-- Quick Links Section -->
-                                    <div style="margin-bottom: 16px;background:#34596B;border-radius: 14px; padding: 16px;">
+                                    <div style="margin-left: 16px;margin-bottom: 16px;background:#34596B;border-radius: 14px; padding: 16px;">
                                         <h3 style="margin: 0 0 16px 0; color: #ffffff; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">
                                             Quick Links
                                         </h3>
@@ -394,7 +397,7 @@
                                     </div>
 
                                     <!-- Need Help Section -->
-                                    <div style="border: 1px solid rgba(224, 78, 57, 0.10); padding: 16px;background:#FFF9F8;border-radius: 12px">
+                                    <div style="margin-left: 16px;border: 1px solid rgba(224, 78, 57, 0.10); padding: 16px;background:#FFF9F8;border-radius: 12px">
                                         <h3 style="margin: 0 0 16px 0; color: #34596B; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">
                                             Need Help?
                                         </h3>
