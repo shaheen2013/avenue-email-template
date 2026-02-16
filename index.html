@@ -18,18 +18,69 @@
     a {
         text-decoration: none;
     }
-
+    .px-32{
+        padding-inline:32px !important;
+    }
+    .pt-32{
+        padding-top:32px !important;
+    }
+    .p-32{
+        padding:32px !important;
+    }
+    .p-head-32{
+        padding:32px !important;
+    }
+    .text-xs-left{
+        text-align: center;
+    }
     @media (max-width: 600px) {
-        .cs-res-tr {
-            background: red;
-            td{
-                width: 100% !important;
-                padding-right: 0 !important;
-                text-align: center !important;
-                float: left !important;
-                margin-bottom: 16px !important;
-            }
+        .text-xs-left{
+            text-align: left !important;
+            margin-top: 8px;
         }
+        .px-32{
+            padding-inline:16px !important;
+        }
+        .pt-32{
+            padding-top:16px !important;
+        }
+        .p-16{
+            padding:16px !important;
+        }
+        .p-head-32{
+            padding:24px !important;
+        }
+        .cs-res-tr {
+            overflow: hidden;
+            padding: 0 !important;
+            border: 0 !important;
+        }
+        .td-100{
+            width: 100% !important;
+            float: left !important;
+        }
+        .td-68{
+            width: calc(100% - 32px) !important;
+            float: left !important;
+        }
+        .text-center{
+            text-align: center !important;
+        }
+        .mt-16{
+            margin-top:16px !important;
+        }
+        .cs-border{
+            border: 1px solid #EDF5F7;
+            border-top: none;
+            border-radius: 0 0 16px 16px;
+            width: calc(100% - 32px) !important;
+            padding: 16px;
+        }
+        .ml-0{
+            margin-left: 0 !important;
+            margin-top: 16px !important;
+        }
+
     }
 </style>
 <body style="margin: 0; padding: 0; background-color: #e8e8e8; font-family: cursive, Arial, Helvetica, sans-serif;">
@@ -39,25 +90,25 @@
     <tr>
         <td style="padding: 24px 0;">
             <!-- Email Container -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="640"
-                   style="margin: 0 auto; background-color: #ffffff;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                   style="margin: 0 auto; background-color: #ffffff;max-width: 600px;">
 
                 <!-- Header Section -->
                 <tr>
                     <td
-                            style="background-image: url('https://i.ibb.co.com/ch9KFcZ9/bg.png');
+                            style="background-image: url('/image/bg.png');
                                  text-align: center;
                                  background-repeat: no-repeat;
                                  background-size: cover;
-                                 padding: 32px;
                                  border-radius: 0 0 16px 16px;"
+                            class="p-head-32"
                     >
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <td style="text-align: center;">
                                     <!-- Logo -->
                                     <div style="margin-bottom: 16px;">
-                                        <a href=""><img src="https://i.ibb.co.com/BVCRJrpQ/logo.png" alt="logo"
+                                        <a href=""><img src="/image/logo.png" alt="logo"
                                                         border="0"
                                                         style="display: block; width: 100px; height: auto; margin: 0 auto;"/></a>
                                     </div>
@@ -73,11 +124,11 @@
 
                 <!-- Hero Image Section -->
                 <tr>
-                    <td style="padding: 0; background-color: #ffffff;">
+                    <td style="background-color: #ffffff;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <!-- Left Image (Family) -->
-                                <td style="padding: 32px 32px 0 32px;">
+                                <td class="pt-32 px-32">
                                     <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600&h=300&fit=crop"
                                          alt="Happy family"
                                          style="display: block; width: 100%; height: auto; border-radius:16px 16px 0 0;object-fit: cover;">
@@ -89,12 +140,12 @@
 
                 <!-- Main Content Section -->
                 <tr>
-                    <td style="padding: 0 32px;">
+                    <td class="px-32">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr class="cs-res-tr"
                                 style="padding: 16px;display:block;border: 1px solid #EDF5F7;border-top: none;border-radius: 0 0 16px 16px;">
                                 <!-- Left Column - Article Content -->
-                                <td style="width: 324px;padding-right:16px;vertical-align: top; background-color: #ffffff;">
+                                <td style="width: 324px;padding-right:16px;vertical-align: top; background-color: #ffffff;" class="td-100 cs-border text-center">
                                     <h2 style="margin:0 0 16px 0; color: #34596B; font-size: 20px; font-weight: 700; line-height:30px;">
                                         Understanding Your Credit Before Buying a Home
                                     </h2>
@@ -123,7 +174,7 @@
                                                 <a href="#"
                                                    style="width:100%; display: block; padding: 12px 0; color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 0.5px;text-align: center">
                                                     READ THE FULL GUIDE
-                                                    <img src="https://i.ibb.co.com/n83kDXt5/arrow-right.png"
+                                                    <img src="/image/arrow-right.png"
                                                          alt="arrow-icon" style="margin-bottom: -2px;">
                                                 </a>
                                             </td>
@@ -132,7 +183,7 @@
                                 </td>
 
                                 <!-- Right Column - Upcoming Classes -->
-                                <td style="width: 260px; padding: 16px; vertical-align: top; background-color: #EDF5F7;border-radius: 10px">
+                                <td class="mt-16 td-68" style="width: 260px; padding: 16px; vertical-align: top; background-color: #EDF5F7;border-radius: 10px">
                                     <!-- Section Title -->
                                     <div style="margin-bottom: 16px;">
                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0"
@@ -140,7 +191,7 @@
                                             <tr>
                                                 <td style="vertical-align: middle;">
                                                     <span style="display: inline-block; width: 28px; height: 28px; background-color: #ffffff; border: 1px solid #34596B; border-radius: 8px; margin-right: 8px; text-align: center; line-height: 32px;float:left;">
-                                                        <img src="https://i.ibb.co.com/k69KRJPQ/calendar.png" alt="icon"
+                                                        <img src="/image/calendar.png" alt="icon"
                                                              style="width: 16px; height: 16px;">
                                                     </span>
                                                     <span style="color: #34596B; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; line-height: 32px;">
@@ -160,16 +211,16 @@
                                                         background: #fff;
                                                         border-radius: 8px;
                                                         padding: 10px;
-                                                        display: block;
+                                                        display: flex;
                                                         margin-bottom: 8px;
                                                     "
                                             >
-                                                <td style="vertical-align: top; width: 45%;">
+                                                <td style="vertical-align: top;">
                                                     <strong style="color: #34596B; font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px;">FEB
                                                         10</strong>
                                                     <span style="color: #527180; font-size: 12px;">6:00 PM</span>
                                                 </td>
-                                                <td style="text-align: right; vertical-align: top; width: 25%;">
+                                                <td style="text-align: right; vertical-align: top; margin-left: auto;">
                                                         <span style="display: inline-block; padding: 2px 8px; border: 1px solid #34596B; border-radius: 50px; color: #34596B; font-size: 10px; line-height:16px;">
                                                             Virtual
                                                         </span>
@@ -180,16 +231,16 @@
                                                         background: #fff;
                                                         border-radius: 8px;
                                                         padding: 10px;
-                                                        display: block;
+                                                        display: flex;
                                                         margin-bottom: 8px;
                                                     "
                                             >
-                                                <td style="vertical-align: top; width: 45%;">
+                                                <td style="vertical-align: top;">
                                                     <strong style="color: #34596B; font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px;">FEB
                                                         17</strong>
                                                     <span style="color: #527180; font-size: 12px;">10:00 AM</span>
                                                 </td>
-                                                <td style="text-align: right; vertical-align: top; width: 25%;">
+                                                <td style="text-align: right; vertical-align: top; margin-left: auto;">
                                                         <span style="display: inline-block; padding: 2px 8px; border: 1px solid #34596B; border-radius: 50px; color: #34596B; font-size: 10px; line-height:16px;">
                                                             Virtual
                                                         </span>
@@ -200,16 +251,16 @@
                                                         background: #fff;
                                                         border-radius: 8px;
                                                         padding: 10px;
-                                                        display: block;
+                                                        display: flex;
                                                         margin-bottom: 8px;
                                                     "
                                             >
-                                                <td style="vertical-align: top; width: 45%;">
+                                                <td style="vertical-align: top;">
                                                     <strong style="color: #34596B; font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px;">FEB
                                                         21</strong>
                                                     <span style="color: #527180; font-size: 12px;">7:00 PM</span>
                                                 </td>
-                                                <td style="text-align: right; vertical-align: top; width: 25%;">
+                                                <td style="text-align: right; vertical-align: top; margin-left: auto;">
                                                         <span style="display: inline-block; padding: 2px 8px; border: 1px solid #34596B; border-radius: 50px; color: #34596B; font-size: 10px; line-height:16px;">
                                                             Virtual
                                                         </span>
@@ -220,16 +271,16 @@
                                                         background: #fff;
                                                         border-radius: 8px;
                                                         padding: 10px;
-                                                        display: block;
+                                                        display: flex;
                                                         margin-bottom: 8px;
                                                     "
                                             >
-                                                <td style="vertical-align: top; width: 45%;">
+                                                <td style="vertical-align: top;">
                                                     <strong style="color: #34596B; font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px;">FEB
                                                         24</strong>
                                                     <span style="color: #527180; font-size: 12px;">Anytime</span>
                                                 </td>
-                                                <td style="text-align: right; vertical-align: top; width: 25%;">
+                                                <td style="text-align: right; vertical-align: top; margin-left: auto;">
                                                         <span style="display: inline-block; padding: 2px 8px; border: 1px solid #34596B; border-radius: 50px; color: #34596B; font-size: 10px; line-height:16px;">
                                                             Self-Paced
                                                         </span>
@@ -239,11 +290,11 @@
                                     </div>
 
                                     <!-- View All Link -->
-                                    <div style="text-align: center;">
+                                    <div class="text-xs-left">
                                         <a href="#"
                                            style="color: #34596B; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; border-bottom:1px solid #34596B">
                                             VIEW ALL CLASSES
-                                            <img src="https://i.ibb.co.com/jBL9hkv/arrow-right-color.png" alt="icon"
+                                            <img src="/image/arrow-right-color.png" alt="icon"
                                                  style="margin-bottom: -2px;">
                                         </a>
                                     </div>
@@ -255,11 +306,11 @@
 
                 <!-- Bottom Section: Event + Quick Links -->
                 <tr>
-                    <td style="padding:20px 32px; background-color: #ffffff;">
+                    <td class="p-32 p-16" style="background-color: #ffffff;padding-top: 20px !important;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <!-- Left Column - Upcoming Event -->
-                                <td style="width: 246px; padding:16px; vertical-align: top; background-color: #EDF5F7;border-radius: 14px; border:1px solid #E5EFF2">
+                                <td class="td-68" style="width: 246px; padding:16px; vertical-align: top; background-color: #EDF5F7;border-radius: 14px; border:1px solid #E5EFF2">
                                     <!-- Section Title -->
                                     <div style="color: #305263; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.8px;padding:8px 12px; border:1px solid #305263; border-radius: 50px;margin-bottom: 12px; display: inline-block">
                                         Upcoming Event
@@ -269,7 +320,7 @@
                                     <div style="background-color: #ffffff; border-radius: 12px; padding: 14px; margin-bottom: 8px;">
                                         <div
                                                 style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: #325667; border-radius: 8px; text-align: center; line-height: 20px; text-decoration: none;float: left;margin-right: 12px;">
-                                            <img src="https://i.ibb.co.com/pvYXVGzf/calendar-white.png" alt="icon"
+                                            <img src="/image/calendar-white.png" alt="icon"
                                                  style="width: 20px; height: 20px;">
                                         </div>
                                         <span style="margin-top: 2px;display: inline-block">
@@ -280,7 +331,7 @@
                                     <div style="background-color: #ffffff; border-radius: 12px; padding: 14px; margin-bottom: 8px;">
                                         <div
                                                 style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: #325667; border-radius: 8px; text-align: center; line-height: 20px; text-decoration: none;float: left;margin-right: 12px;">
-                                            <img src="https://i.ibb.co.com/PsSJ0crR/map.png" alt="icon"
+                                            <img src="/image/map.png" alt="icon"
                                                  style="width: 20px; height: 20px;">
                                         </div>
                                         <span style="margin-top: 2px;display: inline-block">
@@ -302,7 +353,7 @@
                                                 <a href="#"
                                                    style="display: inline-block; padding: 10px 0; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: 0.5px; width: 100%;text-align: center">
                                                     GET EVENT DETAILS
-                                                    <img src="https://i.ibb.co.com/n83kDXt5/arrow-right.png"
+                                                    <img src="/image/arrow-right.png"
                                                          alt="arrow-icon" style="margin-bottom: -2px;">
                                                 </a>
                                             </td>
@@ -313,7 +364,7 @@
                                 <!-- Right Column - Quick Links + Need Help -->
                                 <td style="display: inline-block;width: 100%;">
                                     <!-- Quick Links Section -->
-                                    <div style="margin-left: 16px;margin-bottom: 16px;background:#34596B;border-radius: 14px; padding: 16px;">
+                                    <div class="ml-0"  style="margin-left: 16px;margin-bottom: 16px;background:#34596B;border-radius: 14px; padding: 16px;">
                                         <h3 style="margin: 0 0 16px 0; color: #ffffff; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">
                                             Quick Links
                                         </h3>
@@ -323,7 +374,7 @@
                                             <tr>
                                                 <td style="width: 32px; margin-bottom: 12px; vertical-align: middle;">
                                                     <div style="display: inline-block;width: 32px;height: 32px;padding: 0;background-color: #fff;border-radius: 8px;text-align: center;line-height: 36px;text-decoration: none;float: left;margin-right: 12px;">
-                                                        <img src="https://i.ibb.co.com/Rkp2Tz7R/text.png" alt="icon"
+                                                        <img src="/image/text.png" alt="icon"
                                                              style="width: 16px; height: 16px;">
                                                     </div>
                                                 </td>
@@ -336,7 +387,7 @@
                                                 <td style="width: 20px; text-align: right; vertical-align: middle;">
                                                     <a href="#"
                                                        style="color: #ffffff; text-decoration: none; font-size: 14px;">
-                                                        <img src="https://i.ibb.co.com/hFrKsP0d/arrow.png" alt="icon"
+                                                        <img src="/image/arrow.png" alt="icon"
                                                              style="width: 16px; height: 16px; border:1px solid #fff; border-radius: 4px; padding: 4px;">
                                                     </a>
                                                 </td>
@@ -345,7 +396,7 @@
                                             <tr>
                                                 <td style="width: 32px; vertical-align: middle;">
                                                     <div style="display: inline-block;width: 32px;height: 32px;padding: 0;background-color: #fff;border-radius: 8px;text-align: center;line-height: 36px;text-decoration: none;float: left;margin-right: 12px;">
-                                                        <img src="https://i.ibb.co.com/Rkp2Tz7R/text.png" alt="icon"
+                                                        <img src="/image/text.png" alt="icon"
                                                              style="width: 16px; height: 16px;">
                                                     </div>
                                                 </td>
@@ -358,7 +409,7 @@
                                                 <td style="width: 20px; text-align: right; vertical-align: middle;">
                                                     <a href="#"
                                                        style="color: #ffffff; text-decoration: none; font-size: 14px;">
-                                                        <img src="https://i.ibb.co.com/hFrKsP0d/arrow.png" alt="icon"
+                                                        <img src="/image/arrow.png" alt="icon"
                                                              style="width: 16px; height: 16px; border:1px solid #fff; border-radius: 4px; padding: 4px;">
                                                     </a>
                                                 </td>
@@ -367,7 +418,7 @@
                                             <tr>
                                                 <td style="width: 32px; vertical-align: middle;">
                                                     <div style="display: inline-block;width: 32px;height: 32px;padding: 0;background-color: #fff;border-radius: 8px;text-align: center;line-height: 36px;text-decoration: none;float: left;margin-right: 12px;">
-                                                        <img src="https://i.ibb.co.com/gLHk2MnZ/dollor.png" alt="icon"
+                                                        <img src="/image/dollor.png" alt="icon"
                                                              style="width: 16px; height: 16px;">
                                                     </div>
                                                 </td>
@@ -380,7 +431,7 @@
                                                 <td style="width: 20px; text-align: right; vertical-align: middle;">
                                                     <a href="#"
                                                        style="color: #ffffff; text-decoration: none; font-size: 14px;">
-                                                        <img src="https://i.ibb.co.com/hFrKsP0d/arrow.png" alt="icon"
+                                                        <img src="/image/arrow.png" alt="icon"
                                                              style="width: 16px; height: 16px; border:1px solid #fff; border-radius: 4px; padding: 4px;">
                                                     </a>
                                                 </td>
@@ -389,7 +440,7 @@
                                             <tr>
                                                 <td style="width: 32px; vertical-align: middle;">
                                                     <div style="display: inline-block;width: 32px;height: 32px;padding: 0;background-color: #fff;border-radius: 8px;text-align: center;line-height: 36px;text-decoration: none;float: left;margin-right: 12px;">
-                                                        <img src="https://i.ibb.co.com/Rkp2Tz7R/text.png" alt="icon"
+                                                        <img src="/image/text.png" alt="icon"
                                                              style="width: 16px; height: 16px;">
                                                     </div>
                                                 </td>
@@ -402,7 +453,7 @@
                                                 <td style="width: 20px; text-align: right; vertical-align: middle;">
                                                     <a href="#"
                                                        style="color: #ffffff; text-decoration: none; font-size: 14px;">
-                                                        <img src="https://i.ibb.co.com/hFrKsP0d/arrow.png" alt="icon"
+                                                        <img src="/image/arrow.png" alt="icon"
                                                              style="width: 16px; height: 16px; border:1px solid #fff; border-radius: 4px; padding: 4px;">
                                                     </a>
                                                 </td>
@@ -411,7 +462,7 @@
                                     </div>
 
                                     <!-- Need Help Section -->
-                                    <div style="margin-left: 16px;border: 1px solid rgba(224, 78, 57, 0.10); padding: 16px;background:#FFF9F8;border-radius: 12px">
+                                    <div class="ml-0" style="margin-left: 16px;border: 1px solid rgba(224, 78, 57, 0.10); padding: 16px;background:#FFF9F8;border-radius: 12px">
                                         <h3 style="margin: 0 0 16px 0; color: #34596B; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">
                                             Need Help?
                                         </h3>
@@ -422,7 +473,7 @@
                                         <!-- Contact Info -->
                                         <div style="margin-bottom:8px;">
                                             <img style="float: left;margin-right: 8px;"
-                                                 src="https://i.ibb.co.com/35SQ0LXv/phone.png" alt="phone icon">
+                                                 src="/image/phone.png" alt="phone icon">
                                             <a href="tel:5551234567"
                                                style="color: #34596B;font-size: 14px;">
                                                 (555) 123-4567
@@ -431,7 +482,7 @@
 
                                         <div style="margin-bottom: 12px;">
                                             <img style="float: left;margin-right: 8px;"
-                                                 src="https://i.ibb.co.com/4wFXCFsL/email.png" alt="email icon">
+                                                 src="/image/email.png" alt="email icon">
                                             <a href="mailto:info@avenue.org"
                                                style="color: #34596B;font-size: 14px;">
                                                 info@avenue.org
@@ -448,7 +499,7 @@
                                                        style="display: inline-block; padding: 10px 0; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: 0.5px; text-align: center;width: 100%;">
                                                         SCHEDULE A CALL
 
-                                                        <img src="https://i.ibb.co.com/n83kDXt5/arrow-right.png"
+                                                        <img src="/image/arrow-right.png"
                                                              alt="arrow-icon" style="margin-bottom: -2px;">
                                                     </a>
                                                 </td>
@@ -463,11 +514,10 @@
 
                 <!-- Footer -->
                 <tr>
-                    <td style="background-image: url('https://i.ibb.co.com/sMqSZzJ/fbg.png');
+                    <td class="p-head-32" style="background-image: url('/image/footer-bg.png');
                                  text-align: center;
                                  background-repeat: no-repeat;
                                  background-size: 100% 100%;
-                                 padding: 32px;
                                  border-radius: 16px 16px 0 0;"
                     >
                         <!-- Logo -->
@@ -475,7 +525,7 @@
                             <div style="margin-bottom: 16px;">
 
                                 <a href="">
-                                    <img src="https://i.ibb.co.com/Y4wfFzCK/f-logo.png" alt="Logo"
+                                    <img src="/image/footer-logo.png" alt="Logo"
                                          style="display: block; width: 180px; height: auto; margin: 0 auto;">
                                 </a>
                             </div>
@@ -498,27 +548,27 @@
                         <div style="margin-bottom: 16px;">
                             <a href="#"
                                style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: rgba(255,255,255,0.15); border-radius: 4px; margin: 0 6px; text-align: center; line-height: 20px; text-decoration: none;">
-                                <img src="https://i.ibb.co.com/Fk3jrfxB/fb.png" alt="icon"
+                                <img src="/image/fb.png" alt="icon"
                                      style="width: 20px; height: 20px;">
                             </a>
                             <a href="#"
                                style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: rgba(255,255,255,0.15); border-radius: 4px; margin: 0 6px; text-align: center; line-height: 20px; text-decoration: none;">
-                                <img src="https://i.ibb.co.com/pBVM6xmd/youtube.png" alt="icon"
+                                <img src="/image/youtube.png" alt="icon"
                                      style="width: 20px; height: 20px;">
                             </a>
                             <a href="#"
                                style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: rgba(255,255,255,0.15); border-radius: 4px; margin: 0 6px; text-align: center; line-height: 20px; text-decoration: none;">
-                                <img src="https://i.ibb.co.com/S4zPCLw6/ins.png" alt="icon"
+                                <img src="/image/ins.png" alt="icon"
                                      style="width: 20px; height: 20px;">
                             </a>
                             <a href="#"
                                style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: rgba(255,255,255,0.15); border-radius: 4px; margin: 0 6px; text-align: center; line-height: 20px; text-decoration: none;">
-                                <img src="https://i.ibb.co.com/6RGgkChj/linkedin.png" alt="icon"
+                                <img src="/image/linkedin.png" alt="icon"
                                      style="width: 20px; height: 20px;">
                             </a>
                         </div>
 
-                        <p style="margin: 0 0 4px 0; color:#A3C7D2; font-size: 10px; line-height: 1.6;border-top: 1px solid white;padding-top: 16px;">
+                        <p style="margin: 0 0 4px 0; color:#A3C7D2; font-size: 10px; line-height: 1.6;border-top: 1px solid #D9E5E933;padding-top: 16px;">
                             You received this email because you subscribed to Avenue updates.
                         </p>
                         <p style="margin: 0; color: rgba(255,255,255,0.5); font-size: 10px;">
