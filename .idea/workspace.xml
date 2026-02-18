@@ -5,7 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="010e2826-f92d-4802-950c-94cd461ebdca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/image.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-copy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/email-template.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/arrow-right-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/arrow-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/calendar-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/dollor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/footer-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/footer-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/ins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/question.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/youtube.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,34 +71,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.folding",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1772596878470" />
-    <option name="spentUsd" value="0.03635675" />
+    <option name="spentUsd" value="0.12592874" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="7" />
+    <option name="suspendCountdown" value="0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\avenue-email-template" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

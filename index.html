@@ -17,6 +17,7 @@
 
     a {
         text-decoration: none;
+        color:currentColor;
     }
     .px-32{
         padding-inline:32px !important;
@@ -96,25 +97,31 @@
                 <!-- Header Section -->
                 <tr>
                     <td
-                            style="background-image: url('/image/bg.png');
-                                 text-align: center;
-                                 background-repeat: no-repeat;
-                                 background-size: cover;
-                                 border-radius: 0 0 16px 16px;"
-                            class="p-head-32"
+                        style="background-image: url('/image/bg.png');
+                             text-align: center;
+                             background-repeat: no-repeat;
+                             background-size: cover;
+                             border-radius: 0 0 16px 16px;"
+                        class="p-head-32"
                     >
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
                                 <td style="text-align: center;">
                                     <!-- Logo -->
                                     <div style="margin-bottom: 16px;">
-                                        <a href=""><img src="/image/logo.png" alt="logo"
-                                                        border="0"
-                                                        style="display: block; width: 100px; height: auto; margin: 0 auto;"/></a>
+                                            <img
+                                                    editable
+                                                    label='Logo Image'
+                                                    width="116"
+                                                    src="/image/logo.png"
+                                                    alt="logo"
+                                                    border="0"
+                                                    style="display: block; width: 100px; height: auto; margin: 0 auto;"
+                                            />
                                     </div>
                                     <!-- Title -->
                                     <h1 style="margin: 0; color: #ffffff; font-size: 20px; font-weight: 700; letter-spacing: 0.5px; line-height: 1.3;">
-                                        YOUR MONTHLY HOMEOWNERSHIP UPDATE
+                                        <singleline label='Tag Quote'>YOUR MONTHLY HOMEOWNERSHIP UPDATE</singleline>
                                     </h1>
                                 </td>
                             </tr>
@@ -129,8 +136,11 @@
                             <tr>
                                 <!-- Left Image (Family) -->
                                 <td class="pt-32 px-32">
-                                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600&h=300&fit=crop"
-                                         alt="Happy family"
+                                    <img  editable
+                                          label='Hero Image'
+                                          width="574"
+                                          src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600&h=300&fit=crop"
+                                         alt="Hero Image"
                                          style="display: block; width: 100%; height: auto; border-radius:16px 16px 0 0;object-fit: cover;">
                                 </td>
                             </tr>
@@ -147,36 +157,32 @@
                                 <!-- Left Column - Article Content -->
                                 <td style="width: 324px;padding-right:16px;vertical-align: top; background-color: #ffffff;" class="td-100 cs-border text-center">
                                     <h2 style="margin:0 0 16px 0; color: #34596B; font-size: 20px; font-weight: 700; line-height:30px;">
-                                        Understanding Your Credit Before Buying a Home
+                                        <singleline label='Main Quote'>Understanding Your Credit Before Buying a Home</singleline>
                                     </h2>
 
-                                    <p style="margin: 0 0 12px 0; color: #527180; font-size: 14px;line-height: 22px">
+                                    <multiline label='Main Feature Intro' style="margin: 0 0 12px 0; color: #527180; font-size: 14px;line-height: 22px">
                                         Your credit score is one of the most important factors in securing a mortgage.
                                         Learn how to check your credit, understand your score, and take steps to improve
                                         it before you start house hunting.
-                                    </p>
 
-                                    <p style="margin: 0 0 12px 0; color: #527180; font-size: 14px;line-height: 22px">
                                         We'll walk you through everything from reading your credit report to disputing
                                         errors, plus share insider tips from our certified housing counselors on
                                         building credit the right way.
-                                    </p>
 
-                                    <p style="margin: 0 0 12px 0; color: #527180; font-size: 14px;line-height: 22px">
                                         We'll walk you through everything from reading your credit report to disputing
                                         errors,
-                                    </p>
+                                    </multiline>
 
                                     <!-- CTA Button -->
                                     <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
                                         <tr>
                                             <td style="border-radius: 10px; background-color: #B5BD00;">
-                                                <a href="#"
+                                                <div
                                                    style="width:100%; display: block; padding: 12px 0; color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 0.5px;text-align: center">
-                                                    READ THE FULL GUIDE
+                                                    <singleline label='Button'>READ THE FULL GUIDE</singleline>
                                                     <img src="/image/arrow-right.png"
                                                          alt="arrow-icon" style="margin-bottom: -2px;">
-                                                </a>
+                                                </div>
                                             </td>
                                         </tr>
                                     </table>
@@ -195,7 +201,7 @@
                                                              style="width: 16px; height: 16px;">
                                                     </span>
                                                     <span style="color: #34596B; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; line-height: 32px;">
-                                                            Upcoming Classes
+                                                           <singleline label='Upcoming Text'>Upcoming Classes</singleline>
                                                         </span>
                                                 </td>
                                             </tr>
@@ -206,97 +212,41 @@
                                     <div>
                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0"
                                                width="100%">
-                                            <tr
-                                                    style="
+                                            <repeater>
+                                                <tr
+                                                        style="
                                                         background: #fff;
                                                         border-radius: 8px;
                                                         padding: 10px;
                                                         display: flex;
                                                         margin-bottom: 8px;
                                                     "
-                                            >
-                                                <td style="vertical-align: top;">
-                                                    <strong style="color: #34596B; font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px;">FEB
-                                                        10</strong>
-                                                    <span style="color: #527180; font-size: 12px;">6:00 PM</span>
-                                                </td>
-                                                <td style="text-align: right; vertical-align: top; margin-left: auto;">
-                                                        <span style="display: inline-block; padding: 2px 8px; border: 1px solid #34596B; border-radius: 50px; color: #34596B; font-size: 10px; line-height:16px;">
-                                                            Virtual
+                                                >
+                                                    <td style="vertical-align: top;">
+                                                        <strong style="color: #34596B; font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px;">
+                                                            <singleline label="Date" repeatertitle='true' >FEB 10</singleline>
+                                                        </strong>
+                                                        <span style="color: #527180; font-size: 12px;">
+                                                            <singleline label="Time" repeatertitle='true'>6:00 PM</singleline>
                                                         </span>
-                                                </td>
-                                            </tr>
-                                            <tr
-                                                    style="
-                                                        background: #fff;
-                                                        border-radius: 8px;
-                                                        padding: 10px;
-                                                        display: flex;
-                                                        margin-bottom: 8px;
-                                                    "
-                                            >
-                                                <td style="vertical-align: top;">
-                                                    <strong style="color: #34596B; font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px;">FEB
-                                                        17</strong>
-                                                    <span style="color: #527180; font-size: 12px;">10:00 AM</span>
-                                                </td>
-                                                <td style="text-align: right; vertical-align: top; margin-left: auto;">
+                                                    </td>
+                                                    <td style="text-align: right; vertical-align: top; margin-left: auto;">
                                                         <span style="display: inline-block; padding: 2px 8px; border: 1px solid #34596B; border-radius: 50px; color: #34596B; font-size: 10px; line-height:16px;">
-                                                            Virtual
+                                                            <singleline label="Button Text" repeatertitle='true'>Virtual</singleline>
                                                         </span>
-                                                </td>
-                                            </tr>
-                                            <tr
-                                                    style="
-                                                        background: #fff;
-                                                        border-radius: 8px;
-                                                        padding: 10px;
-                                                        display: flex;
-                                                        margin-bottom: 8px;
-                                                    "
-                                            >
-                                                <td style="vertical-align: top;">
-                                                    <strong style="color: #34596B; font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px;">FEB
-                                                        21</strong>
-                                                    <span style="color: #527180; font-size: 12px;">7:00 PM</span>
-                                                </td>
-                                                <td style="text-align: right; vertical-align: top; margin-left: auto;">
-                                                        <span style="display: inline-block; padding: 2px 8px; border: 1px solid #34596B; border-radius: 50px; color: #34596B; font-size: 10px; line-height:16px;">
-                                                            Virtual
-                                                        </span>
-                                                </td>
-                                            </tr>
-                                            <tr
-                                                    style="
-                                                        background: #fff;
-                                                        border-radius: 8px;
-                                                        padding: 10px;
-                                                        display: flex;
-                                                        margin-bottom: 8px;
-                                                    "
-                                            >
-                                                <td style="vertical-align: top;">
-                                                    <strong style="color: #34596B; font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px;">FEB
-                                                        24</strong>
-                                                    <span style="color: #527180; font-size: 12px;">Anytime</span>
-                                                </td>
-                                                <td style="text-align: right; vertical-align: top; margin-left: auto;">
-                                                        <span style="display: inline-block; padding: 2px 8px; border: 1px solid #34596B; border-radius: 50px; color: #34596B; font-size: 10px; line-height:16px;">
-                                                            Self-Paced
-                                                        </span>
-                                                </td>
-                                            </tr>
+                                                    </td>
+                                                </tr>
+                                            </repeater>
                                         </table>
                                     </div>
 
                                     <!-- View All Link -->
                                     <div class="text-xs-left">
-                                        <a href="#"
-                                           style="color: #34596B; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; border-bottom:1px solid #34596B">
-                                            VIEW ALL CLASSES
+                                        <div>
+                                            <singleline label='View Button Text' style="color: #34596B; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; border-bottom:1px solid #34596B">VIEW ALL CLASSES</singleline>
                                             <img src="/image/arrow-right-color.png" alt="icon"
                                                  style="margin-bottom: -2px;">
-                                        </a>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
@@ -313,49 +263,51 @@
                                 <td class="td-68" style="width: 246px; padding:16px; vertical-align: top; background-color: #EDF5F7;border-radius: 14px; border:1px solid #E5EFF2">
                                     <!-- Section Title -->
                                     <div style="color: #305263; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.8px;padding:8px 12px; border:1px solid #305263; border-radius: 50px;margin-bottom: 12px; display: inline-block">
-                                        Upcoming Event
+                                        <singleline label="Event Title">Upcoming Event</singleline>
+                                    </div>
+
+                                    <div style="margin-bottom: 16px; color: #305263; font-size: 24px; font-weight: 700;">
+                                        <singleline label="Event Title">Home Fest 2025</singleline>
                                     </div>
 
                                     <!-- Event Card -->
-                                    <div style="background-color: #ffffff; border-radius: 12px; padding: 14px; margin-bottom: 8px;">
-                                        <div
-                                                style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: #325667; border-radius: 8px; text-align: center; line-height: 20px; text-decoration: none;float: left;margin-right: 12px;">
-                                            <img src="/image/calendar-white.png" alt="icon"
-                                                 style="width: 20px; height: 20px;">
-                                        </div>
-                                        <span style="margin-top: 2px;display: inline-block">
-                                            <b style="font-size: 12px; color: #34596B; ">March 15-16, 2025</b> <br>
-                                            <span style="color:#527180;font-size: 10px">Two full days of workshops</span>
+                                    <repeater>
+                                        <div style="background-color: #ffffff; border-radius: 12px; padding: 14px; margin-bottom: 8px;">
+                                            <div
+                                                    style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: #325667; border-radius: 8px; text-align: center; line-height: 20px; text-decoration: none;float: left;margin-right: 12px;">
+                                                <img
+                                                        editable
+                                                        label='Icon'
+                                                        width="20"
+                                                        src="/image/calendar-white.png"
+                                                        alt="icon"
+                                                        style="width: 20px; height: 20px;">
+                                            </div>
+                                            <span style="margin-top: 2px;display: inline-block">
+                                            <b style="font-size: 12px; color: #34596B; ">
+                                                <singleline label="Event Title">March 15-16, 2025</singleline>
+                                            </b> <br>
+                                            <span style="color:#527180;font-size: 10px"><singleline label="Event Title">Two full days of workshops</singleline></span>
                                         </span>
-                                    </div>
-                                    <div style="background-color: #ffffff; border-radius: 12px; padding: 14px; margin-bottom: 8px;">
-                                        <div
-                                                style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: #325667; border-radius: 8px; text-align: center; line-height: 20px; text-decoration: none;float: left;margin-right: 12px;">
-                                            <img src="/image/map.png" alt="icon"
-                                                 style="width: 20px; height: 20px;">
                                         </div>
-                                        <span style="margin-top: 2px;display: inline-block">
-                                            <b style="font-size: 12px; color: #34596B; ">Downtown Convention Center</b> <br>
-                                            <span style="color:#527180;font-size: 10px">123 Main Street</span>
-                                        </span>
-                                    </div>
+                                    </repeater>
 
-                                    <p style="margin: 0 0 14px 0; color: #527180; font-size: 14px; line-height: 1.6;">
+                                    <multiline label='Description' style="margin: 0 0 14px 0; color: #527180; font-size: 14px; line-height: 1.6;">
                                         Join us for our annual homeownership festival featuring workshops, free
                                         one-on-one counseling appointments. Join us for our annual homeownership
                                         festival featuring workshops.
-                                    </p>
+                                    </multiline>
 
                                     <!-- Event CTA Button -->
                                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                         <tr>
-                                            <td style="border-radius: 10px; background-color: #34596B;">
-                                                <a href="#"
+                                            <td style="border-radius: 10px; background-color: #34596B;margin-top: 16px;">
+                                                <div
                                                    style="display: inline-block; padding: 10px 0; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: 0.5px; width: 100%;text-align: center">
-                                                    GET EVENT DETAILS
+                                                    <singleline label="Button Text">GET EVENT DETAILS</singleline>
                                                     <img src="/image/arrow-right.png"
                                                          alt="arrow-icon" style="margin-bottom: -2px;">
-                                                </a>
+                                                </div>
                                             </td>
                                         </tr>
                                     </table>
@@ -366,127 +318,67 @@
                                     <!-- Quick Links Section -->
                                     <div class="ml-0"  style="margin-left: 16px;margin-bottom: 16px;background:#34596B;border-radius: 14px; padding: 16px;">
                                         <h3 style="margin: 0 0 16px 0; color: #ffffff; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">
-                                            Quick Links
+                                            <singleline label="Text">Quick Links</singleline>
                                         </h3>
 
                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0"
                                                width="100%;" style=" border-spacing: 0 12px;">
-                                            <tr>
-                                                <td style="width: 32px; margin-bottom: 12px; vertical-align: middle;">
-                                                    <div style="display: inline-block;width: 32px;height: 32px;padding: 0;background-color: #fff;border-radius: 8px;text-align: center;line-height: 36px;text-decoration: none;float: left;margin-right: 12px;">
-                                                        <img src="/image/text.png" alt="icon"
-                                                             style="width: 16px; height: 16px;">
-                                                    </div>
-                                                </td>
-                                                <td style="vertical-align: middle;">
-                                                    <a href="#"
-                                                       style="color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 500;">
-                                                        First-Time Buyer Guide
-                                                    </a>
-                                                </td>
-                                                <td style="width: 20px; text-align: right; vertical-align: middle;">
-                                                    <a href="#"
-                                                       style="color: #ffffff; text-decoration: none; font-size: 14px;">
-                                                        <img src="/image/arrow.png" alt="icon"
-                                                             style="width: 16px; height: 16px; border:1px solid #fff; border-radius: 4px; padding: 4px;">
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td style="width: 32px; vertical-align: middle;">
-                                                    <div style="display: inline-block;width: 32px;height: 32px;padding: 0;background-color: #fff;border-radius: 8px;text-align: center;line-height: 36px;text-decoration: none;float: left;margin-right: 12px;">
-                                                        <img src="/image/text.png" alt="icon"
-                                                             style="width: 16px; height: 16px;">
-                                                    </div>
-                                                </td>
-                                                <td style="vertical-align: middle;">
-                                                    <a href="#"
-                                                       style="color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 500;">
-                                                        Credit Counseling
-                                                    </a>
-                                                </td>
-                                                <td style="width: 20px; text-align: right; vertical-align: middle;">
-                                                    <a href="#"
-                                                       style="color: #ffffff; text-decoration: none; font-size: 14px;">
-                                                        <img src="/image/arrow.png" alt="icon"
-                                                             style="width: 16px; height: 16px; border:1px solid #fff; border-radius: 4px; padding: 4px;">
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td style="width: 32px; vertical-align: middle;">
-                                                    <div style="display: inline-block;width: 32px;height: 32px;padding: 0;background-color: #fff;border-radius: 8px;text-align: center;line-height: 36px;text-decoration: none;float: left;margin-right: 12px;">
-                                                        <img src="/image/dollor.png" alt="icon"
-                                                             style="width: 16px; height: 16px;">
-                                                    </div>
-                                                </td>
-                                                <td style="vertical-align: middle;">
-                                                    <a href="#"
-                                                       style="color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 500;">
-                                                        Down Payment Assistance
-                                                    </a>
-                                                </td>
-                                                <td style="width: 20px; text-align: right; vertical-align: middle;">
-                                                    <a href="#"
-                                                       style="color: #ffffff; text-decoration: none; font-size: 14px;">
-                                                        <img src="/image/arrow.png" alt="icon"
-                                                             style="width: 16px; height: 16px; border:1px solid #fff; border-radius: 4px; padding: 4px;">
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td style="width: 32px; vertical-align: middle;">
-                                                    <div style="display: inline-block;width: 32px;height: 32px;padding: 0;background-color: #fff;border-radius: 8px;text-align: center;line-height: 36px;text-decoration: none;float: left;margin-right: 12px;">
-                                                        <img src="/image/text.png" alt="icon"
-                                                             style="width: 16px; height: 16px;">
-                                                    </div>
-                                                </td>
-                                                <td style="vertical-align: middle;">
-                                                    <a href="#"
-                                                       style="color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 500;">
-                                                        FAQs
-                                                    </a>
-                                                </td>
-                                                <td style="width: 20px; text-align: right; vertical-align: middle;">
-                                                    <a href="#"
-                                                       style="color: #ffffff; text-decoration: none; font-size: 14px;">
-                                                        <img src="/image/arrow.png" alt="icon"
-                                                             style="width: 16px; height: 16px; border:1px solid #fff; border-radius: 4px; padding: 4px;">
-                                                    </a>
-                                                </td>
-                                            </tr>
+                                            <repeater>
+                                                <tr>
+                                                    <td style="width: 32px; margin-bottom: 12px; vertical-align: middle;">
+                                                        <div style="display: inline-block;width: 32px;height: 32px;padding: 0;background-color: #fff;border-radius: 8px;text-align: center;line-height: 36px;text-decoration: none;float: left;margin-right: 12px;">
+                                                            <img
+                                                                    editable
+                                                                    label='Logo Image'
+                                                                    width="16"
+                                                                    src="/image/text.png" alt="icon"
+                                                                 style="width: 16px; height: 16px;">
+                                                        </div>
+                                                    </td>
+                                                    <td style="vertical-align: middle;">
+                                                        <div
+                                                           style="color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 500;">
+                                                            <singleline label="Title">First-Time Buyer Guide</singleline>
+                                                        </div>
+                                                    </td>
+                                                    <td style="width: 20px; text-align: right; vertical-align: middle;">
+                                                        <div
+                                                           style="color: #ffffff; text-decoration: none; font-size: 14px;">
+                                                            <img src="/image/arrow.png" alt="icon"
+                                                                 style="width: 16px; height: 16px; border:1px solid #fff; border-radius: 4px; padding: 4px;">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </repeater>
                                         </table>
                                     </div>
 
                                     <!-- Need Help Section -->
                                     <div class="ml-0" style="margin-left: 16px;border: 1px solid rgba(224, 78, 57, 0.10); padding: 16px;background:#FFF9F8;border-radius: 12px">
                                         <h3 style="margin: 0 0 16px 0; color: #34596B; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;">
-                                            Need Help?
+                                            <singleline label="Title"> Need Help?</singleline>
                                         </h3>
                                         <p style="margin: 0 0 8px 0; color: #527180; font-size: 14px; line-height: 1.5;">
-                                            Speak with a housing counselor:
+                                            <singleline label="Title">Speak with a housing counselor:</singleline>
                                         </p>
 
                                         <!-- Contact Info -->
                                         <div style="margin-bottom:8px;">
                                             <img style="float: left;margin-right: 8px;"
                                                  src="/image/phone.png" alt="phone icon">
-                                            <a href="tel:5551234567"
+                                            <span
                                                style="color: #34596B;font-size: 14px;">
-                                                (555) 123-4567
-                                            </a>
+                                                <singleline label="Title">(555) 123-4567</singleline>
+                                            </span>
                                         </div>
 
                                         <div style="margin-bottom: 12px;">
                                             <img style="float: left;margin-right: 8px;"
                                                  src="/image/email.png" alt="email icon">
-                                            <a href="mailto:info@avenue.org"
+                                            <span
                                                style="color: #34596B;font-size: 14px;">
-                                                info@avenue.org
-                                            </a>
+                                                <singleline label="Title">info@avenue.org</singleline>
+                                            </span>
                                         </div>
 
 
@@ -495,13 +387,12 @@
                                                width="100%">
                                             <tr>
                                                 <td style="border-radius: 10px; background-color: #E04E39;">
-                                                    <a href="#"
+                                                    <div
                                                        style="display: inline-block; padding: 10px 0; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: 0.5px; text-align: center;width: 100%;">
-                                                        SCHEDULE A CALL
-
+                                                        <singleline label="Title">SCHEDULE A CALL</singleline>
                                                         <img src="/image/arrow-right.png"
                                                              alt="arrow-icon" style="margin-bottom: -2px;">
-                                                    </a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </table>
@@ -524,58 +415,48 @@
                         <div style="margin-bottom: 15px;">
                             <div style="margin-bottom: 16px;">
 
-                                <a href="">
-                                    <img src="/image/footer-logo.png" alt="Logo"
+                                <div>
+                                    <img
+                                            editable
+                                            label='Logo Image'
+                                            width="180"
+                                            src="/image/footer-logo.png" alt="Logo"
                                          style="display: block; width: 180px; height: auto; margin: 0 auto;">
-                                </a>
+                                </div>
                             </div>
                         </div>
 
                         <p style="margin: 0 0 4px 0; color: #fff; font-size: 12px; line-height: 1.6;">
-                            Avenue Homeownership Counseling
+                           <singleline label="Name">Avenue Homeownership Center</singleline>
                         </p>
                         <p style="margin: 0 0 4px 0; color: #fff; font-size: 12px; line-height: 1.6;">
-                            123 Main Street, City, ST 12345
+                           <singleline label="Address">123 Main Street, City, ST 12345</singleline>
                         </p>
                         <p style="margin: 0 0 16px 0; color: #fff; font-size: 12px; line-height: 1.6;">
-                            <a href="mailto:info@avenue.org"
-                               style="color: #fff">info@avenue.org</a> |
-                            <a href="tel:5551234567" style="color: #fff">(555)
-                                123-4567</a>
+                            <singleline label="Title" style="color: #fff">info@avenue.org</singleline> |
+                            <singleline label="Title" style="color: #fff">(555) 123-4567</singleline>
                         </p>
 
                         <!-- Social Icons -->
                         <div style="margin-bottom: 16px;">
-                            <a href="#"
-                               style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: rgba(255,255,255,0.15); border-radius: 4px; margin: 0 6px; text-align: center; line-height: 20px; text-decoration: none;">
-                                <img src="/image/fb.png" alt="icon"
-                                     style="width: 20px; height: 20px;">
-                            </a>
-                            <a href="#"
-                               style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: rgba(255,255,255,0.15); border-radius: 4px; margin: 0 6px; text-align: center; line-height: 20px; text-decoration: none;">
-                                <img src="/image/youtube.png" alt="icon"
-                                     style="width: 20px; height: 20px;">
-                            </a>
-                            <a href="#"
-                               style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: rgba(255,255,255,0.15); border-radius: 4px; margin: 0 6px; text-align: center; line-height: 20px; text-decoration: none;">
-                                <img src="/image/ins.png" alt="icon"
-                                     style="width: 20px; height: 20px;">
-                            </a>
-                            <a href="#"
-                               style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: rgba(255,255,255,0.15); border-radius: 4px; margin: 0 6px; text-align: center; line-height: 20px; text-decoration: none;">
-                                <img src="/image/linkedin.png" alt="icon"
-                                     style="width: 20px; height: 20px;">
-                            </a>
+                            <repeater>  
+                                <span
+                                   style="display: inline-block; width: 20px; height: 20px;padding: 10px; background-color: rgba(255,255,255,0.15); border-radius: 4px; margin: 0 6px; text-align: center; line-height: 20px; text-decoration: none;">
+                                    <img editable
+                                         label='Icon'
+                                         width="20"
+                                         src="/image/fb.png" alt="icon"
+                                         style="width: 20px; height: 20px;">
+                                </span>
+                            </repeater>
                         </div>
 
                         <p style="margin: 0 0 4px 0; color:#A3C7D2; font-size: 10px; line-height: 1.6;border-top: 1px solid #D9E5E933;padding-top: 16px;">
-                            You received this email because you subscribed to Avenue updates.
+                            <singleline label="Description">You received this email because you subscribed to Avenue updates.</singleline>
                         </p>
-                        <p style="margin: 0; color: rgba(255,255,255,0.5); font-size: 10px;">
-                            <a href="#"
-                               style="color: rgba(255,255,255,0.7); text-decoration: underline;">Preferences</a> |
-                            <a href="#"
-                               style="color: rgba(255,255,255,0.7); text-decoration: underline;">Unsubscribe</a>
+                        <p style="margin: 0; color: rgba(255,255,255,0.5); font-size: 10px;display: flex;justify-content: center;align-items: center;gap: 8px">
+                            <singleline label="Preferences">Preferences</singleline> |
+                            <unsubscribe label="Unsubscribe" href="*|UNSUBSCRIBE|*">Unsubscribe</unsubscribe>
                         </p>
                     </td>
                 </tr>
