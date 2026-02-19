@@ -5,38 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="010e2826-f92d-4802-950c-94cd461ebdca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/image.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-copy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/email-template.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/arrow-right-color.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/arrow-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/calendar-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/calendar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/dollor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/email.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/footer-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/footer-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/hero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/ins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/linkedin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/phone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/question.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/text.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image.zip" beforeDir="false" afterPath="$PROJECT_DIR$/image.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/arrow-right-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/arrow-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/calendar-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/dollor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/footer-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/footer-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/ins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/question.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/image/youtube.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +42,7 @@
     </persistenceIdMap>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="31" />
+    <option name="cachedIndexableFilesCount" value="27" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -122,6 +112,8 @@
       <workItem from="1770726969240" duration="3568000" />
       <workItem from="1770972599986" duration="15004000" />
       <workItem from="1771233174883" duration="6957000" />
+      <workItem from="1771420549129" duration="158000" />
+      <workItem from="1771474899671" duration="4937000" />
     </task>
     <servers />
   </component>
